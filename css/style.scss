@@ -1,0 +1,155 @@
+*{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box;
+}
+li{
+	list-style:none;
+}
+html,body,.container{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.container{
+	display:-webkit-flex;
+	-webkit-flex-direction:column;
+}
+.public{
+	width:50px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+}
+.header{
+	width:100%;
+	height:50px;
+	background:orange;
+	position:relative;
+	.search{
+		width:100%;
+		height:50px;
+		padding:0 50px;
+		p{
+			width:90%;
+			height:30px;
+			background:#fff;
+			margin:10px auto;
+			border-radius:10px;
+			text-align:center;
+			line-height:30px;
+			font-size:14px;
+			i{
+				color:orange;
+			}
+			span{
+				color:#999;
+				margin-right:5px;
+			}
+		}
+	}
+	.qiandao{
+		@extend .public;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	.store{
+		@extend .public;
+		position:absolute;
+		right:0;
+		top:0;
+	}
+}
+.main{
+	width:100%;
+	-webkit-flex:1;
+	overflow:auto;
+	.banner{
+		width:100%;
+		height:auto;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	.nav{
+		width:100%;
+		height:60px;
+		li{
+			width:33.3%;
+			float:left;
+			line-height:60px;
+			font-size:14px;
+			color:#b29b65;
+			i{
+				display:block;
+				width:35px;
+				height:30px;
+				float:left;
+				padding-top:7px;
+				padding-left:15%;
+				margin-right:5px;
+				img{
+					width:100%;
+					height:100%;
+				}
+			}
+		}
+	}
+	.list{
+		width:100%;
+		padding:0 10px;
+		.item{
+			width:50%;
+			float:left;
+			padding:3px;
+			.img{
+				width:100%;
+				height:auto;
+				img{
+					width:100%;
+					height:100%;
+				}
+			}
+			h5{
+				padding:5px 0;
+				font-size:13px;
+			}
+			.miaoshu{
+				width:100%;
+				height:30px;
+				line-height:30px;
+				color:#666;
+				font-size:13px;
+			}
+			.select{
+				i{
+					margin:0 5px;
+				}
+			}
+		}
+	}
+}
+.footer{
+	width:100%;
+	height:50px;
+	li{
+		width:20%;
+		float:left;
+		text-align:center;
+		font-size:14px;
+		color:#666;
+		i{
+			display:block;
+			text-align:center;
+			font-size:18px;
+			padding:4px 0;
+		}
+	}
+	.on{
+		color:yellow;
+	}
+}
